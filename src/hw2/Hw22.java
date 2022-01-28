@@ -3,7 +3,7 @@ package hw2;
 public class Hw22 {
 
     public static void main(String[] args) {
-        int d =6;
+        int d =7;
         System.out.println(CheckNumber(d));
 
 
