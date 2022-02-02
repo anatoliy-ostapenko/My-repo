@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Task4 {
     public static void main(String[] args) {
 
-
-        //int[] randomIntsArray = IntStream.generate(() -> new Random().nextInt(10)).limit(2000).toArray();
-        // Double[] doubleArray = new Double[]{IntStream.generate(() -> new Random().doubles(10)).limit(2000).toArray()};
         int[] randomNumsArray = new int[2000];
         createArray(randomNumsArray);
 

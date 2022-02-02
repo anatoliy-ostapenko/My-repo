@@ -3,10 +3,10 @@ package ua.ostapenko.hw4;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Task2 {
+public class Task3 {
     public static void main(String[] args) {
-        int[] myArray = createArray(15,10);
-        int myCount = countSimpleNum(myArray);
+        int[] myArray = createArray(15,100);
+        int myCount = countNonSimpleNum(myArray);
         System.out.println(myCount);
         System.out.println(Arrays.toString(myArray));
     }
@@ -19,27 +19,26 @@ public class Task2 {
         }
         return randomArray;
     }
-    public static int countSimpleNum(int[] sourceArray){
+    public static int countNonSimpleNum(int[] sourceArray){
         int count = 0;
         for(int i=0; i<sourceArray.length; i++ ){
-            if(isSimple(sourceArray[i])){
+            if(isNotSimple(sourceArray[i])){
                 count++;
             }
         }
         return count;
     }
-
-    public static boolean isSimple(int num){
-        boolean isSimpl = false;
+    public static boolean isNotSimple(int num){
+        boolean isNotSimple = false;
         for (int i = 2; i < num; i++) {
+             int c = num%i;
             if(num%i!=0){
-                isSimpl= true;
+                isNotSimple= false;
             }
             else{
-                return false;
+                return true;
             }
         }
-        return isSimpl;
+        return isNotSimple;
     }
-
 }
