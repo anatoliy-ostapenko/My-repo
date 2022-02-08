@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Task3 {
     public static void main(String[] args) {
-        int[] myArray = createArray(15,100);
+        int[] myArray = createArray(15,1000);
         int myCount = countNonSimpleNum(myArray);
         System.out.println(myCount);
         System.out.println(Arrays.toString(myArray));
