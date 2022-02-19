@@ -1,4 +1,4 @@
-package ua.ostapenko.hw6;
+package ua.ostapenko.hw7;
 
 
 public class Car {

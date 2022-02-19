@@ -18,14 +18,19 @@ public class Hw8 {
     }
 
     public static int getUsersSizeArray() {
+
         System.out.println("Введите размер массива, он должен быть больще 10 ");
         Scanner scanner = new Scanner(System.in);
         Integer s = scanner.nextInt();
-        if (s < 10) {
-            System.out.println("Массив меньше 10");
-            getUsersSizeArray();
+        int result;
+        if (s >= 10) {
+            result = s;
         }
-        return s;
+        else{
+            System.out.println("Массив меньше 10");
+            result = getUsersSizeArray();
+        }
+        return result ;
     }
 
     public static int[] createRandomArray(int arrSize) {

@@ -17,7 +17,7 @@ class Lock {
     private int[] array;
 
     public Lock(int[] array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     public int[] getArray() {

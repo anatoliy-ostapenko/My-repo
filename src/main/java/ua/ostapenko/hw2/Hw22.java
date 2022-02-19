@@ -1,4 +1,4 @@
-package hw2;
+package ua.ostapenko.hw2;
 
 public class Hw22 {
 
