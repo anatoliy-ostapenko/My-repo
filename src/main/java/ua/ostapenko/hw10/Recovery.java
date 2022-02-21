@@ -12,6 +12,6 @@ interface Recovery {
     }
 }
 
-interface Recovery1 {
-    void refuel(int fuel);
-}
+//interface Recovery1 {
+//    void refuel(int fuel);
+//}

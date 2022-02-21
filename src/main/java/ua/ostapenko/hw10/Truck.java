@@ -8,12 +8,26 @@ public class Truck extends Car {
         this.cargo = cargo;
     }
 
-    public int cargoCount(int cargo) {
-        return cargo;
+    public void loadCargo() {
+        if(cargo == 0){
+            cargo = 100;
+        }
+        else{
+        System.out.println("No possibility to load cargo");
+        }
+
+    }
+    public void unloadCargo () {
+        if(cargo > 0){
+            cargo = 0;
+        }
+        else{
+            System.out.println("Is impossible to unload cargo");
+        }
     }
 
     @Override
-    public void levelEnough(int fuel) {
+    public void moving(int fuel) {
         if (this.getFuelLevel() > fuel * 2) {
             this.fuelLevel = this.fuelLevel - fuel * 2;
         }

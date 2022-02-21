@@ -1,6 +1,6 @@
 package ua.ostapenko.hw10;
 
-public class Car implements Recovery, Recovery1 {
+public class Car implements Recovery {
     private String series;
     private int year;
     private String color;
@@ -14,8 +14,7 @@ public class Car implements Recovery, Recovery1 {
 
     }
 
-
-    public void levelEnough(int fuel) {
+    public void moving(int fuel) {
         if (this.fuelLevel > fuel) {
             this.fuelLevel = this.fuelLevel - fuel;
         }
@@ -48,8 +47,8 @@ public class Car implements Recovery, Recovery1 {
         System.out.println("Топлива осталось: " + fuelLevel);
     }
 
-    @Override
-    public void refuel(int fuel) {
-        setFuelLevel(fuel);
-    }
+//    @Override
+//    public void refuel(int fuel) {
+//        setFuelLevel(fuel);
+//    }
 }

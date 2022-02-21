@@ -8,9 +8,12 @@ public class PassengerCar extends Car {
         this.passenger = passenger;
     }
 
-    public void addPassengers(int num) {
-        if (num <= 3 & num > 0) {
-            this.passenger = num;
+    public void addPassengers() {
+        if (this.passenger < 3 ) {
+            this.passenger ++;
+        }
+        else {
+            System.out.println("It's not free places");
         }
     }
 
